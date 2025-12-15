@@ -1,0 +1,32 @@
+/* couleur */
+:root {
+    --beige: #eadfc8;
+    --blanc: #f7f7f7;
+    --blanc-nacré: #fff9f0;
+    --bleu: #275b85;
+    --gris: #333333;
+    --noir: #1c1c1c;
+    --orange: #f4a261;
+    --pêche: #ffdde2;
+    --vert: #29760e;
+    --vert-clair: #50c878;
+    --vert-foncé: #2e8b57;
+}
+
+/* font-name */
+:root {
+    --body: Nunito;
+    --bouton: Montserrat;
+    --header1: Playfair Display;
+}
+
+/* font-size */
+:root {
+    --semi: 0.75rem; /*12px*/
+    --small: 0.8125rem; /*13px*/
+    --body: 0.875rem; /*14px*/
+    --bouton: 1rem; /*16px*/
+    --header3-t: 1.25rem; /*20px*/
+    --header2-t: 1.5rem; /*24px*/
+    --header1-t: 1.75rem; /*28px*/
+}

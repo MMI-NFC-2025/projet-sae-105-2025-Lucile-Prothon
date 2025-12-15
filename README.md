@@ -3,8 +3,8 @@
 
 À compléter :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
+- NOM : Lucile
+- PRÉNOM : Prothon
+- GROUPE : C2
 - URL du site :
-- URL FIGMA :
+- URL FIGMA : https://www.figma.com/design/weB2Bz07QfUUPu8H6q2OQN/Maquettes-projet-individuel-%E2%80%94-Lucile-Prothon?node-id=0-1&t=lQrSFeYXktPvACrw-1 
