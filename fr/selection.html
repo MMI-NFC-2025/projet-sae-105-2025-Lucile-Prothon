@@ -20,27 +20,59 @@
             </button>
             <nav class="header__menu menu" id="mainNav" aria-hidden="true">
                 <ul class="menu__list list-unstyled">
-                    <p class="menu__titre"><img src="../assets/icon/flechebas.svg"> Articles principaux</p>
-                    <p class="menu__item"> <a class="menu__link" href="lorna.html">Lorna Wing</a></p>
-                    <p class="menu__item"> <a class="menu__link" href="autisme.html">L'autisme</a></p>
-                    <p class="menu__item"> <a class="menu__link" href="vulgariser.html">Vulgariser la science</a></p>
-                    <p class="menu__item"> <a class="menu__link" href="culture.html">L'autisme dans la culture</a>
-                    </p>
-                    <p class="menu__item"> <a class="menu__link" href="matilda.html">L'effet matilda</a></p>
-                    <p class="menu__titre"><img src="../assets/icon/flechebas.svg"> Contenu visuel</p>
-                    <p class="menu__item"> <a class="menu__link" href="documentaire.html">Film & documentaires</a></p>
-                    <p class="menu__item"> <a class="menu__link" href="extrait.html">Extrait de la BU</a></p>
-                    <p class="menu__item"> <a class="menu__link" href="film.html">Film</a></p>
-                    <p class="menu__item"> <a class="menu__link" href="livre.html">Livre</a></p>
-                    <p class="menu__titre"><img src="../assets/icon/flechebas.svg"> Les oubliées de la science</p>
-                    <p class="menu__item"> <a class="menu__link" href="rehabilitation.html">Réhabilitation des
-                            figures féminines</a></p>
-                    <p class="menu__item"> <a class="menu__link" href="femme.html">Les femmes de sciences dans la
-                            littératures</a></p>
-                    <p class="menu__item"> <a class="menu__link" href="frise.html">Frise Matilda</a></p>
-                    <p class="menu__item"> <a class="menu__link" href="publication.html">Les publications de
-                            Lorna</a>
-                    </p>
+                    <li class="accordeon">
+                        <details open>
+                            <summary class="menu__titre"><img src="../assets/icon/flechebas.svg" class="arrow" alt="">
+                                Articles principaux</summary>
+                            <div class="accordeon-content">
+                                <ul>
+                                    <li class="menu__item"><a class="menu__link" href="lorna.html">Lorna Wing</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="autisme.html">L'autisme</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="vulgariser.html">Vulgariser la
+                                            science</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="culture.html">L'autisme dans la
+                                            culture</a></li>
+                                     <li class="menu__item"><a class="menu__link" href="fr/matilda.html">L'effet matilda</a></li>
+                                </ul>
+                            </div>
+                        </details>
+                    </li>
+
+                    <li class="accordeon">
+                        <details open>
+                            <summary class="menu__titre"><img src="../assets/icon/flechebas.svg" class="arrow" alt="">
+                                Contenu visuel</summary>
+                            <div class="accordeon-content">
+                                <ul>
+                                    <li class="menu__item"><a class="menu__link" href="documentaire.html">Film &
+                                            documentaires</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="extrait.html">Extrait de la
+                                            BU</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="film.html">Film</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="livre.html">Livre</a></li>
+                                </ul>
+                            </div>
+                        </details>
+                    </li>
+
+                    <li class="accordeon">
+                        <details open>
+                            <summary class="menu__titre"><img src="../assets/icon/flechebas.svg" class="arrow" alt="">
+                                Les oubliées de la science</summary>
+                            <div class="accordeon-content">
+                                <ul>
+                                    <li class="menu__item"><a class="menu__link"
+                                            href="rehabilitation.html">Réhabilitation des figures féminines</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="femme.html">Les femmes de
+                                            sciences dans la littératures</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="frise.html">Frise Matilda</a>
+                                    </li>
+                                    <li class="menu__item"><a class="menu__link" href="publication.html">Les
+                                            publications de Lorna</a></li>
+                                </ul>
+                            </div>
+                        </details>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -55,8 +87,9 @@
         <article class="selection_contenu">
             <img src="../assets/img/sous-documentaire.avif" alt="Image représentant une caméra de film.">
             <h2 class="bleu">Films et documentaires</h2>
-            <p class="semi_text">Cet article propose une sélection d’œuvres marquantes qui abordent la différence, la reconnaissance et la place des
-            personnes autistes dans le monde.</p>
+            <p class="semi_text">Cet article propose une sélection d’œuvres marquantes qui abordent la différence, la
+                reconnaissance et la place des
+                personnes autistes dans le monde.</p>
             <button class="bouton_article"> <a href="film.html"><img src="../assets/icon/fleche.svg"> Plus
                     d'informations</a></button>
         </article>
@@ -64,11 +97,12 @@
         <article class="selection_contenu">
             <img src="../assets/img/sous-extrait2.avif" alt="Image représentant un livre ouvert.">
             <h2 class="bleu">Extrait BU</h2>
-            <p class="semi_text">À travers ce livre, l’objectif est de montrer comment la lecture peut devenir un outil de sensibilisation, d’inclusion
-            et de réflexion sur la perception des personnes autistes dans notre société.</p>
+            <p class="semi_text">À travers ce livre, l’objectif est de montrer comment la lecture peut devenir un outil
+                de sensibilisation, d’inclusion
+                et de réflexion sur la perception des personnes autistes dans notre société.</p>
             <button class="bouton_article"> <a href="film.html"><img src="../assets/icon/fleche.svg"> Plus
                     d'informations</a></button>
-        </article> 
+        </article>
     </main>
 
     <footer class="footer">
@@ -88,7 +122,7 @@
             </section>
         </section>
     </footer>
-    
-    </body>
-    
-    </html>
+
+</body>
+
+</html>
