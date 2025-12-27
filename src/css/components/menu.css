@@ -1,0 +1,177 @@
+.menu {
+    position: fixed;
+    top: 58px;
+    right: 0px;
+    width: 100%; /* largeur = 100% de la fenêtre */
+    height: 100vh;/* hauteur = 100% de la fenêtre */
+    background-color: var(--bleu);
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-200px);
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s ease;
+    z-index: 1000;
+    padding: 20px;/* espace intérieur tout autour */
+}
+
+/* Menu ouvert */
+.menu[aria-hidden="false"] {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/*Bloquer le scroll*/
+.noscroll {
+    overflow: hidden;
+}
+
+/* Bouton du menu */
+.menu-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+    z-index: 3;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Images du bouton */
+.menu-btn img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Icône menu fermé visible par défaut */
+.menu-btn .menu_fermé {
+    opacity: 1;
+}
+
+/* Quand menu ouvert → afficher icône ouverte */
+.menu-btn[aria-expanded="true"] .menu_fermé {
+    opacity: 0;
+}
+
+.menu-btn[aria-expanded="true"] .menu_ouvert {
+    opacity: 1;
+}
+
+/*Enlever le soulignement*/
+.menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu__item {
+    font-size: var(--semi);
+    color: var(--blanc-nacré);
+    font-family: var(--bouton);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 12px;/* espace entre texte et flèche */
+    white-space: nowrap;/* garder sur une seule ligne */
+    margin-bottom: 10px;
+}
+
+.menu__titre img.arrow {
+    height: auto;
+    display: inline-block;
+    margin: 0;
+    flex: 0 0 18px;/*empêche l'image de se redimensionner*/
+    transition: transform 280ms ease;
+}
+
+.menu__titre {
+    font-family: var(--bouton);
+    color: var(--blanc-nacré);
+    font-size: var(--small);
+    font-weight: 900;
+    margin-left: 60px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/*Accordeon*/
+details {
+    width: 400px;
+    margin-bottom: 2px;
+    overflow: hidden;
+}
+
+.accordeon {
+    display: block;
+}
+
+.accordeon>details>summary {
+    list-style: none;
+}
+
+.accordeon>details>summary::marker,
+.accordeon>details>summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Reset listes et summary natifs */
+.menu__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu__list ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+summary {
+    list-style: none;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Contenu de l'accordéon animé (déroulé/enroulé) */
+.accordeon-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 320ms ease, opacity 320ms ease;
+    opacity: 0;
+    padding-left: 110px;/* indentation commune pour les items */
+    margin-top: 10px;
+}
+
+/* when open */
+details[open]>.accordeon-content {
+    max-height: 1200px; /* assez grand pour le contenu */
+    opacity: 1;
+}
+
+/* rotate arrow when open while preserving vertical offset */
+details[open] .menu__titre img.arrow {
+    transform: translateY(3px) rotate(270deg);
+}
+
+/* focus visibility for keyboard users */
+summary:focus-visible {
+    outline: 2px solid var(--orange);
+    outline-offset: 3px;
+}
