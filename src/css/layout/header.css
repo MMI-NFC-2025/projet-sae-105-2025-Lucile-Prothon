@@ -1,0 +1,21 @@
+.header_container {
+    /* position: fixed; */
+    z-index: 2;
+    background-color: var(--blanc-transparent);
+    top: 0;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.header__end {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header_container img {
+    align-items: center;
+}
