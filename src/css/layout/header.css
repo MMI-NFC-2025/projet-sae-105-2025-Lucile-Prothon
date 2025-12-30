@@ -1,21 +1,28 @@
 .header_container {
-    /* position: fixed; */
     z-index: 2;
     background-color: var(--blanc-transparent);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     top: 0;
     width: 95%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 5px 10px;
+    box-sizing: border-box;
 }
 
 .header__end {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 25px;
 }
 
-.header_container img {
-    align-items: center;
+.langue {
+    position: absolute;
+    left: 45%;
+}
+
+.header_container:hover {
+    opacity: 0.7;
 }
