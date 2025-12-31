@@ -12,7 +12,7 @@
     transform: translateY(-200px);
     transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s ease;
     z-index: 1000;
-    padding: 20px;/* espace intérieur tout autour */
+    padding: 30px;/* espace intérieur tout autour */
 }
 
 /* Menu ouvert */
@@ -106,7 +106,7 @@
 }
 
 /*Accordeon*/
-details {
+.details {
     width: 400px;
     margin-bottom: 2px;
     overflow: hidden;
@@ -138,7 +138,7 @@ details {
     list-style: none;
 }
 
-summary {
+.summary {
     list-style: none;
     -webkit-appearance: none;
     appearance: none;
@@ -149,7 +149,7 @@ summary::-webkit-details-marker {
     display: none;
 }
 
-/* Contenu de l'accordéon animé (déroulé/enroulé) */
+/* Animation acordéon*/
 .accordeon-content {
     max-height: 0;
     overflow: hidden;
@@ -159,13 +159,13 @@ summary::-webkit-details-marker {
     margin-top: 10px;
 }
 
-/* when open */
+/* Ouverture accordéon */
 details[open]>.accordeon-content {
     max-height: 1200px; /* assez grand pour le contenu */
     opacity: 1;
 }
 
-/* rotate arrow when open while preserving vertical offset */
+/* Rotation flêche */
 details[open] .menu__titre img.arrow {
     transform: translateY(3px) rotate(270deg);
 }
