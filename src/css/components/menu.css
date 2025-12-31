@@ -1,7 +1,8 @@
 .menu {
     position: fixed;
-    top: 58px;
+    top: 60px;
     right: 0px;
+    left: 0px;
     width: 100%; /* largeur = 100% de la fenêtre */
     height: 100vh;/* hauteur = 100% de la fenêtre */
     background-color: var(--bleu);
@@ -12,7 +13,7 @@
     transform: translateY(-200px);
     transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s ease;
     z-index: 1000;
-    padding: 30px;/* espace intérieur tout autour */
+    padding: 20px;/* espace intérieur tout autour */
 }
 
 /* Menu ouvert */
@@ -125,7 +126,7 @@
     display: none;
 }
 
-/* Reset listes et summary natifs */
+/*Suppression soulignement */
 .menu__list {
     margin: 0;
     padding: 0;
