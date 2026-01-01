@@ -1,25 +1,24 @@
 .hero {
-    position: relative;
-    margin-inline: -80px;
     height: 100vh;
+    z-index: 1;
+    position: static;
 }
 
 .hero img {
     width: 100%;
     height: auto;
     display: block;
+    z-index: 2;
 }
 
 h1 {
+    z-index: 3;
     font-family: var(--header1);
     font-size: var(--header1-t);
-    -webkit-text-stroke: 1px black;
-    white-space: pre; /* Pas de  retours automatiques */
-    position: absolute;
-    left: 20%;
-    bottom: 80px;
     color: var(--blanc);
     text-align: left;
     line-height: 1.1;
-    z-index: 5;
+    -webkit-text-stroke: 1px black;
+    margin-top: -20vh; /* Ajuster la position verticale du texte */
+    margin-left: 10%;
 }
