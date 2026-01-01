@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--blanc-nacrée);
+    font-family: var(--body);
+    font-size: var(--body-t);
+    display: flex;
+    flex-direction: column;
+    text-align: left;/* obligatoire pour que les lignes commencent à gauche */
+    line-height: 1.8;
+}
+
+
+h2 {
+    font-family: var(--header1);
+    font-size: var(--header2-t);
+    font-weight: bold;
+    color: var(--vert-foncé);
+    display: flex;
+    justify-content: center;/*Centrage horizontal */
+    align-items: center;
+    margin-top : 160px;
+}
+
+/*Citation accueil*/
+
+.citation {
+    background: var(--pêche);
+    border-radius: 40px;
+    padding: 20px 20px;
+    max-width: 700px;
+    margin: 60px 30px;
+    text-align: center;
+}
+
+.titre {
+   font-family: var(--bouton); 
+   font-size: var(--header3-t);
+   font-weight: bold;
+   color: var(--bleu);
+}
+
+.Contenu{
+    font-family: var(--bouton);
+    font-size: var(--bouton-t);
+    font-style: italic;
+}

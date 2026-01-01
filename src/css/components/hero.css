@@ -1,5 +1,5 @@
 .hero {
-    height: 100vh;
+    width: 100%;
     z-index: 1;
     position: static;
 }
@@ -9,6 +9,7 @@
     height: auto;
     display: block;
     z-index: 2;
+    bottom: 140px;
 }
 
 h1 {
