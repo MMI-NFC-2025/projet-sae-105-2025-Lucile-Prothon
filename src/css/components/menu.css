@@ -1,9 +1,7 @@
 .menu {
     z-index: 2000;
     position: fixed;
-    top: 60px;
-    right: 0px;
-    left: 0px;
+    inset: 60px 0 0 0;
     width: 100%; /* largeur = 100% de la fenêtre */
     height: 100vh;/* hauteur = 100% de la fenêtre */
     background-color: var(--bleu);
@@ -14,6 +12,8 @@
     transform: translateY(-200px);
     transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s ease;
     padding: 20px;/* espace intérieur tout autour */
+    margin: 0;
+    box-sizing: border-box;
 }
 
 /* Menu ouvert */

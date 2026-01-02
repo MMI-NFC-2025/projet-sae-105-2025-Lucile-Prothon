@@ -10,8 +10,12 @@ body {
     font-size: var(--body-t);
     display: flex;
     flex-direction: column;
-    text-align: left;/* obligatoire pour que les lignes commencent à gauche */
     line-height: 1.8;
+}
+
+p {
+    padding: 0 30px;
+    text-align: left;
 }
 
 
@@ -24,6 +28,7 @@ h2 {
     justify-content: center;/*Centrage horizontal */
     align-items: center;
     margin-top : 160px;
+    line-height: normal;
 }
 
 /*Citation accueil*/
