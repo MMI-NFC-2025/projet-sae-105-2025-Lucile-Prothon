@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+/*Textes*/
+
 body {
     background-color: var(--blanc-nacrée);
     font-family: var(--body);
@@ -18,7 +20,6 @@ p {
     text-align: left;
 }
 
-
 h2 {
     font-family: var(--header1);
     font-size: var(--header2-t);
@@ -29,6 +30,85 @@ h2 {
     align-items: center;
     margin-top : 160px;
     line-height: normal;
+}
+
+h3 {
+    font-family: var(--header1);
+    font-size: var(--header2-t);
+    color: var(--vert-clair);
+    font-weight: bold;
+}
+
+h4{
+    font-family: var(--header1);
+    font-size: var(--header2-t);
+    color: var(--bleu);
+    font-weight: bold;
+}
+
+
+.bleu {
+    font-family: var(--header1);
+    font-size: var(--header3-t);
+    color: var(--bleu);
+    font-weight: bold;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.texte_mit_en_avant{
+    font-family: var(--body);
+    font-size: var(--bold);
+    font-weight: bold;
+    font-style: italic;
+}
+
+.lecture{
+    font-family: var(--body);
+    font-size: var(--semi);
+    text-align: center;
+}
+
+.intro{
+    font-family: var(--body);
+    font-size: var(--body-t);
+    text-align: center;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.legende{
+    font-family: var(--body);
+    font-size: var(--semi);
+    text-align: center;
+}
+
+/*Texte autres articles*/
+
+.bouton_autres_articles{
+    font-family: var(--bouton);
+    font-size: var(--semi);
+    font-weight: 600;
+}
+
+/*Texte bouton accueil*/
+
+.bouton_article{
+    font-family: var(--bouton);
+    font-size: var(--bouton-t);
+    font-weight: 600;
+}
+
+.texte_présentation{
+    font-family: var(--body);
+    font-size: var(--semi);
+}
+
+/*Enlever le soulignement*/
+
+.main a {
+    text-decoration: none;
+    color: inherit;
 }
 
 /*Citation accueil*/
