@@ -5,7 +5,6 @@
 }
 
 
-
 /*Textes*/
 
 body {
@@ -48,7 +47,6 @@ h4{
     font-weight: bold;
 }
 
-
 .bleu {
     font-family: var(--header1);
     font-size: var(--header3-t);
@@ -85,6 +83,13 @@ h4{
     text-align: center;
 }
 
+.texte_gras{
+    font-family: var(--header1);
+    font-size: var(--header3-t);
+    font-weight: bold;
+    color: black;
+}
+
 /*Texte autres articles*/
 
 .bouton_autres_articles{
@@ -111,6 +116,13 @@ h4{
 .main a {
     text-decoration: none;
     color: inherit;
+}
+
+/*Activer le soulignement*/
+
+.lien-souligne{
+    text-decoration: underline !important;
+    color: var(--bleu) !important;
 }
 
 /*Citation accueil*/

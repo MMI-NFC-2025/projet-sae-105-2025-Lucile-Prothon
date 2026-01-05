@@ -31,3 +31,8 @@ h2,
 .section-suivante {
     padding-top: 70px;
 }
+
+.texte {
+    padding-top: 40%;
+    padding-bottom: 20%;
+}
