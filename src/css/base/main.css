@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 /*Textes*/
 
 body {
@@ -199,10 +198,12 @@ h4{
 .search-form input[type="search"] {
     width: 100%;
     padding: 16px 70px 16px 24px;
-    font-size: 1.1rem;
+    font-size: var(--bouton-t);
     background-color: var(--beige);
     outline: none;
     box-sizing: border-box;
+    font-family: var(--bouton);
+    font-weight: 600;
 }
 
 /* Placeholder */
@@ -230,15 +231,80 @@ h4{
     background-color: rgba(0, 0, 0, 0.08);
 }
 
-/* L'image de la loupe */
 .search-form button img {
     width: 24px;
     height: 24px;
     display: block;
     opacity: 0.7;
-    /* Gris comme sur ton screenshot */
 }
 
 .search-form button:hover img {
     opacity: 0.9;
 }
+
+/*formulaire de contact*/
+
+.contact_section {
+    background-color: var(--blanc-nacrée);
+    padding: 80px 20px;
+    text-align: center;
+    min-height: 80vh;
+    margin-top: -15%;
+}
+
+
+/* Labels */
+.contact_form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    font-family: var(--bouton);
+    font-size: var(--bouton-t);
+    color: var(--noir);
+    font-weight: 600;
+
+}
+
+/* Tous les inputs et textarea */
+.contact_form input[type="text"],
+.contact_form input[type="email"],
+.contact_form textarea {
+    width: 100%;
+    padding: 18px 20px;
+    margin-bottom: 20px;
+    font-size: var(--bouton-t);
+    background-color: var(--blanc);
+    border: 1px solid var(--noir);
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    line-height: 1.5;/* Hauteur de ligne confortable */
+    vertical-align: middle;
+}
+
+
+/* Textarea spécifique */
+.contact_form textarea {
+    min-height: 220px;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Bouton Envoi */
+.contact_form button {
+    display: block;
+    margin-left: auto;
+    padding: 14px 48px;
+    font-size: 1.1rem;
+    background-color: var(--beige);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    font-family: var(-bouton);
+    font-size: var(-bouton-t);
+    font-weight: 600;
+}
+
+
