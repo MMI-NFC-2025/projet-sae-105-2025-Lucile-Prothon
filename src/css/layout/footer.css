@@ -9,20 +9,18 @@
 
 .footer>a img {
     /* Logo */
-    display: block;
-    height: auto;
-    margin-left: 30px;
+    display: block !important;
+    height: auto !important;
+    margin-left: 30px !important;
     /* aligné avec les liens en dessous */
-    margin-bottom: 10px;
+    margin-bottom: 10px !important;
     /* espace entre logo et nav */
 }
 
 .footer_ensemble {
     display: flex;
     justify-content: space-between;
-    /* un à gauche, un à droite */
-    align-items: center;
-    /* alignement vertical */
+    align-items: center;/* alignement vertical */
 }
 
 .footer_nav {
@@ -47,7 +45,7 @@
 }
 
 .footer_rs img {
-    margin-left: 10px;
+    margin-left: 10px !important;
 }
 
 /*Enlever le soulignement*/

@@ -1,0 +1,18 @@
+.img_article {
+    width: 60%;
+    height: auto;
+    margin-top: 5%;
+}
+
+.img_selection{
+    width: 70%;
+    height: auto;
+    margin-top: 5%;
+}
+
+.img_fil {
+    width: 110%;
+    height: auto;
+    margin-top: -30%;
+    margin-bottom: -20%;
+}
