@@ -56,6 +56,11 @@ h4{
     margin-left: 20px;
 }
 
+.semi_text{
+    font-size: var(--semi);
+    font-family: var(--body);
+}
+
 .texte_mit_en_avant{
     font-family: var(--body);
     font-size: var(--bold);
@@ -73,7 +78,14 @@ h4{
     font-family: var(--body);
     font-size: var(--body-t);
     text-align: center;
-    font-weight: 300;
+    font-style: italic;
+}
+
+.intro_gras{
+    font-family: var(--body);
+    font-size: var(--body-t);
+    text-align: center;
+    font-weight: bold;
     font-style: italic;
 }
 
@@ -88,6 +100,13 @@ h4{
     font-size: var(--header3-t);
     font-weight: bold;
     color: black;
+}
+
+.body_glossaire{
+    font-family: var(--body);
+    font-size: var(--body-t);
+    color: var(--vert-foncé);
+    text-decoration: underline;
 }
 
 /*Texte autres articles*/
@@ -147,4 +166,13 @@ h4{
     font-family: var(--bouton);
     font-size: var(--bouton-t);
     font-style: italic;
+}
+
+/*Cadre rose information*/
+
+.informations{
+    background-color: var(--pêche);
+    border-radius: 40px;
+    padding: 10px 10px;
+    margin: 40px 20px;
 }
