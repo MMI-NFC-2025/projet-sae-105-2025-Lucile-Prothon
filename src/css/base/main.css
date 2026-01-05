@@ -307,4 +307,84 @@ h4{
     font-weight: 600;
 }
 
+/*Gallerie autres articles*/
+
+.autres_articles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;/*2 colonnes par défaut */
+    gap: 30px;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.autres_articles .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.autres_articles img {
+    width: 100%; /* Image prend toute la largeur de sa colonne */
+    height: auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    transition: all 0.3s ease;
+    object-fit: cover;
+    display: block;
+}
+
+.bouton_autres_articles {
+    font-family: var(--bouton);
+    font-size: var(--bouton-t);
+    font-weight: 600;
+    color: var(--noir);
+    margin-top: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    transition: all 0.3s ease;
+    text-align: center;
+    padding: 5px 20px;
+}
+
+.bouton_autres_articles img {
+    width: 24px;/* Taille fixe pour la flèche */
+    height: 24px;
+    gap: 12px;
+    flex-shrink: 0;/* Empêche la flèche de rétrécir */
+    background-color: transparent !important;
+    mix-blend-mode: multiply;
+}
+
+/*Séléction*/
+
+.articles_1 {
+    position: relative;
+    margin: -80px auto 40px;
+    max-width: 440px;
+    background: var(--beige);
+    border-radius: 20px 20px 0 0;
+    padding: 40px 40px 50px 40px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Bouton corrigé */
+.bouton_article {
+    background: var(--orange);
+    font-size: var(--bouton-t);
+    font-family: var(--bouton);
+    font-weight: 600;
+    padding: 12px 36px;
+    border: none;
+    border-radius: 12px;
+    display: block;
+    width: fit-content;
+    margin: 32px auto 0 auto;
+    cursor: pointer;
+    text-align: center;
+}
+
 
