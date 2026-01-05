@@ -1,8 +1,6 @@
 .header_container {
     z-index: 2;
     background-color: var(--blanc-transparent);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
     top: 0;
     width: 100%;
     display: flex;
