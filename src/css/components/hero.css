@@ -20,7 +20,7 @@ h1 {
     text-align: left;
     line-height: 1.1;
     -webkit-text-stroke: 1px black;
-    margin-top: -20vh; /* Ajuster la position verticale du texte */
+    margin-top: -25vh; /* Ajuster la position verticale du texte */
     margin-left: 10%;
 }
 
