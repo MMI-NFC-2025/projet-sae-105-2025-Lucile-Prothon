@@ -5,7 +5,6 @@
 }
 
 /*Textes*/
-
 body {
     background-color: var(--blanc-nacrée);
     font-family: var(--body);
@@ -44,6 +43,8 @@ h4{
     font-size: var(--header2-t);
     color: var(--bleu);
     font-weight: bold;
+    text-align: left;
+    margin-left: 30px;
 }
 
 .bleu {
@@ -109,7 +110,6 @@ h4{
 }
 
 /*Texte autres articles*/
-
 .bouton_autres_articles{
     font-family: var(--bouton);
     font-size: var(--semi);
@@ -117,7 +117,6 @@ h4{
 }
 
 /*Texte bouton accueil*/
-
 .bouton_article{
     font-family: var(--bouton);
     font-size: var(--bouton-t);
@@ -127,24 +126,23 @@ h4{
 .texte_présentation{
     font-family: var(--body);
     font-size: var(--semi);
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 /*Enlever le soulignement*/
-
 .main a {
     text-decoration: none;
     color: inherit;
 }
 
 /*Activer le soulignement*/
-
 .lien-souligne{
     text-decoration: underline !important;
     color: var(--bleu) !important;
 }
 
 /*Citation accueil*/
-
 .citation {
     background: var(--pêche);
     border-radius: 40px;
@@ -168,7 +166,6 @@ h4{
 }
 
 /*Cadre rose information*/
-
 .informations{
     background-color: var(--pêche);
     border-radius: 40px;
@@ -177,7 +174,6 @@ h4{
 }
 
 /*Recherche*/
-
 .recherche-main {
     background-color: var(--blanc-nacrée);
     padding: 50px 20px;
@@ -243,7 +239,6 @@ h4{
 }
 
 /*formulaire de contact*/
-
 .contact_section {
     background-color: var(--blanc-nacrée);
     padding: 80px 20px;
@@ -308,7 +303,6 @@ h4{
 }
 
 /*Gallerie autres articles*/
-
 .autres_articles {
     display: grid;
     grid-template-columns: 1fr 1fr;/*2 colonnes par défaut */
@@ -359,32 +353,32 @@ h4{
 }
 
 /*Séléction*/
-
-.articles_1 {
+.articles {
     position: relative;
-    margin: -80px auto 40px;
-    max-width: 440px;
+    margin: -60px 10px 30px;
+    max-width: 540px;
     background: var(--beige);
-    border-radius: 20px 20px 0 0;
-    padding: 40px 40px 50px 40px;
+    border-radius: 10px 5px 0 0;
+    padding: 1px 8px 20px 10px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     text-align: center;
+    margin-bottom: 30px;
 }
 
-/* Bouton corrigé */
 .bouton_article {
     background: var(--orange);
     font-size: var(--bouton-t);
     font-family: var(--bouton);
     font-weight: 600;
-    padding: 12px 36px;
+    padding: 8px 20px;
     border: none;
     border-radius: 12px;
     display: block;
     width: fit-content;
-    margin: 32px auto 0 auto;
+    margin: 30px auto 0 auto;
     cursor: pointer;
     text-align: center;
+    margin-right: 50px;
 }
 
 
