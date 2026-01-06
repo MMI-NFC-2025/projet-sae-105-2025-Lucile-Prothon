@@ -383,3 +383,136 @@ h4{
 }
 
 /*Frise*/
+.matilda-timeline {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 10px;
+    position: relative;
+}
+
+.timeline-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    position: relative;
+}
+
+.timeline-left,
+.timeline-right {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.timeline-block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 12px 15px;
+    border-radius: 15px;
+    border: 2px solid var(--noir);
+    max-width: 340px;
+    position: relative;
+    z-index: 2;
+    background-color: var(--blanc);
+    box-sizing: border-box;
+    gap: 12px;
+}
+
+.timeline-block img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    flex-shrink: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    outline: none;
+}
+
+.timeline-content {
+    flex: 1 1 100%;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titre {
+    font-size: var(--bouton-t);
+    font-family: var(--bouton);
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: var(--noir);
+    line-height: 1.2;
+} 
+
+.timeline-content p {
+    margin: 0;
+    padding: 0; 
+    font-family: var(--bouton);
+    font-size: var(--bold);
+    line-height: 1.4;
+    color: var(--noir);
+    text-align: left;
+    word-wrap: break-word;
+}
+/* Connecteurs*/
+.timeline-block::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    background-color: var(--noir);
+    z-index: 3;
+}
+
+/* Position : sort à gauche*/
+.timeline-block::before {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Position : sort à droite */
+.timeline-left .timeline-block::before {
+    right: -40px;
+}
+
+/*Mise en place tirets */
+.timeline-right .timeline-block::before {
+    left: -40px;
+}
+
+.timeline-left .timeline-block:nth-child(odd)::before,
+.timeline-right .timeline-block:nth-child(even)::before {
+    top: 45%;
+    transform: translateY(-50%);
+}
+
+.timeline-left .timeline-block:nth-child(even)::before,
+.timeline-right .timeline-block:nth-child(odd)::before {
+    top: 50%;/*Position basse des tirets*/
+    transform: translateY(-50%);
+}
+
+/* Décalage des blocs */
+.timeline-left .timeline-block {
+    margin-left: auto;
+    margin-right: 8px;
+}
+
+.timeline-right .timeline-block {
+    margin-right: auto;
+    margin-left: 8px;
+}
+
+/* Couleurs */
+.bg-white {
+    background-color: var(--blanc);
+}
+
+.bg-purple {
+    background-color: var(--violet);
+}
+
+.bg-beige {
+    background-color: var(--beige);
+}
