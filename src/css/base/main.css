@@ -100,7 +100,7 @@ h4{
     font-size: var(--header3-t);
     font-weight: bold;
     color: black;
-    margin-top: 30%;
+    margin-top: 40%;
 }
 
 .body_glossaire{
@@ -278,7 +278,6 @@ h4{
     vertical-align: middle;
 }
 
-
 /* Textarea spécifique */
 .contact_form textarea {
     min-height: 220px;
@@ -320,15 +319,6 @@ h4{
     text-align: center;
 }
 
-.autres_articles img {
-    width: 100%; /* Image prend toute la largeur de sa colonne */
-    height: auto;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-    transition: all 0.3s ease;
-    object-fit: cover;
-    display: block;
-}
-
 .bouton_autres_articles {
     font-family: var(--bouton);
     font-size: var(--bouton-t);
@@ -344,14 +334,6 @@ h4{
     padding: 5px 20px;
 }
 
-.bouton_autres_articles img {
-    width: 24px;/* Taille fixe pour la flèche */
-    height: 24px;
-    gap: 12px;
-    flex-shrink: 0;/* Empêche la flèche de rétrécir */
-    background-color: transparent !important;
-    mix-blend-mode: multiply;
-}
 
 /*Séléction*/
 .articles {
@@ -420,14 +402,6 @@ h4{
     gap: 12px;
 }
 
-.timeline-block img {
-    width: 70px;
-    height: 70px;
-    object-fit: cover;
-    flex-shrink: 0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    outline: none;
-}
 
 .timeline-content {
     flex: 1 1 100%;
