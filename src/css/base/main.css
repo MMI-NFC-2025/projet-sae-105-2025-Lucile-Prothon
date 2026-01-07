@@ -115,6 +115,7 @@ h4{
     font-family: var(--bouton);
     font-size: var(--semi);
     font-weight: 600;
+    color: var(--noir);
 }
 
 /*Texte bouton accueil*/
