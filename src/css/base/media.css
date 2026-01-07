@@ -44,7 +44,6 @@
 .autres_articles img {
     width: 100%;
     height: auto;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
     transition: all 0.3s ease;
     object-fit: cover;
     display: block;
